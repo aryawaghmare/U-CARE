@@ -1,0 +1,29 @@
+Property,Value
+Seed,42
+Image Size,224x224
+Batch Size,8
+Backbone,EfficientNet-B4
+Feature Dimension,512
+Attention Heads,8
+Attention Dropout,0.3
+Projection Dropout,0.2
+MC Dropout,0.3
+Number of Classes,9
+Pretrained,True
+Initial Layers Frozen,True
+Loss,50% Weighted CrossEntropy + 50% Focal Loss
+Focal Gamma,2.0
+Label Smoothing,0.05
+Optimizer,AdamW
+Backbone LR,1e-05
+Head LR,0.0003
+Weight Decay,0.0001
+Total Epochs,30
+Phase 1 Epochs,15
+Phase 2 Epochs,15
+Phase 2 Backbone LR,5e-06
+Phase 2 Head LR,0.0001
+Scheduler,CosineAnnealingLR
+Scheduler Min LR,1e-07
+Gradient Clipping,1.0
+Early Stopping Patience,6

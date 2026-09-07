@@ -1,0 +1,46 @@
+U-CARE V12 — FINAL RESEARCH PACKAGE
+====================================
+
+Model:
+U-CARE V12 Binary Multimodal Model
+
+Modalities:
+1. Fundus
+2. OCT
+
+Archived patient-level test result:
+18 patients
+16 correctly classified
+Accuracy = 88.89%
+
+Archived metrics:
+Accuracy           = 88.89%
+Precision          = 100.00%
+Sensitivity/Recall = 50.00%
+Specificity        = 100.00%
+F1                 = 66.67%
+Balanced Accuracy  = 75.00%
+ROC-AUC            = 100.00%
+PR-AUC             = 100.00%
+
+IMPORTANT:
+These are archived project evaluation results.
+The original multimodal dataset and frozen split were
+not recovered in the current runtime.
+
+Therefore:
+- Do NOT claim independent reproduction of the test result.
+- Do NOT create a new random test split just to improve metrics.
+- Do NOT mix these results with older 9-class U-CARE results.
+- Do NOT report unsupported accuracy improvements.
+
+Scientific limitations:
+- Test set contains only 18 patients.
+- Sensitivity is 50%.
+- External validation is not available.
+- Statistical confidence intervals should be reported where possible.
+- XAI/Grad-CAM should only be presented when generated from
+  the verified model and actual images.
+
+Current package is intended as the frozen U-CARE V12
+research artifact for manuscript preparation.
